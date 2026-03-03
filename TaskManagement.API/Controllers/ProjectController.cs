@@ -24,7 +24,6 @@ namespace TaskManagement.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProjectDTO>>> GetProjects()
         {
-            throw new Exception("Test error");
             var projects = await _projectService.GetProjectsAsync();
 
             return Ok(projects);
@@ -70,5 +69,6 @@ namespace TaskManagement.API.Controllers
             }
             return NoContent();
         }
+
     }
 }

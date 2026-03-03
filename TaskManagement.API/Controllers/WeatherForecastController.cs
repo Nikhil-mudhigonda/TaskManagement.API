@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TaskManagement.API.Models;
 
 namespace TaskManagement.API.Controllers
 {
@@ -29,5 +30,18 @@ namespace TaskManagement.API.Controllers
             })
             .ToArray();
         }
+
+        //public string Name { get; set; }
+
+        //[HttpGet("GetName")]
+        //public IActionResult GetName(jsonLearning name)
+        //{
+        //    var result = new jsonLearning
+        //    {
+        //        Name = name.Name,
+        //        age = name.age
+        //    };
+        //    return Ok($"Hello, {result.Name}, {result.age}!");
+        //}
     }
 }
